@@ -1,8 +1,22 @@
+# Environment files and secrets
 .env
-data/
-audit_logs/
-__pycache__/
-*.pyc
+.env.*
+!.env.example
+
+# Python virtual environments
 .venv/
 venv/
-.claude/
+env/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local/editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
